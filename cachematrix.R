@@ -20,10 +20,10 @@ makeCacheMatrix <- function(x = matrix()) {
     }
     # get function, function returns matrix stored in variable x  
     get <- function() x
-    # setsolve function, function sets a matrix
-    setsolved <- function(solve) s <<- solve
     # getsolve function, function returns a matrix
     getsolved <- function() s
+    # setsolve function, function sets a matrix
+    setsolved <- function(solve) s <<- solve
     
     # return a list of functions
     list(set = set, get = get,
